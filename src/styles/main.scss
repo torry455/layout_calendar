@@ -51,7 +51,7 @@ h1 {
   }
 
   @each $start-day in $start-days {
-    $day-index: index($start-days, $start-day) - 1;
+    $day-index: list.index($start-days, $start-day) - 1;
 
     &--#{$start-day} {
       .calendar__cell:first-child {
